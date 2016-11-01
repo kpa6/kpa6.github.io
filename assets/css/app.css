@@ -1,0 +1,293 @@
+[ng-cloak] {
+  display: none;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Toolbar area */
+
+.menu {
+  background-color: transparent;
+  border: none;
+  height: 38px;
+  margin: 16px;
+  width: 36px;
+}
+
+md-toolbar h1 {
+  margin: auto;
+}
+.md-toolbar-tools .icons {
+  font-size: 36px;
+  cursor: pointer;
+  outline: 0;
+}
+.md-toolbar-tools .editTaskDropdown {
+    position: absolute;
+    right: 53px;
+    top: 50px;
+    z-index: 1;
+}
+.md-toolbar-tools .editTaskDropdown .item{
+  padding: 5px 15px;
+}
+.md-toolbar-tools .editTaskDropdown .item:hover{
+  background-color: #f1efef;
+  cursor: pointer;
+}
+.md-toolbar-tools {
+  padding-left: 0;
+}
+/* Sidenav area */
+
+md-list .md-button {
+  color: inherit;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+
+md-list .md-button.selected {
+  //color: #03a9f4;
+  background-color: #6b6b99 !important;
+  border-radius: 5px;
+}
+
+md-sidenav md-list {
+  padding: 0px 0px 8px 0px;
+}
+md-sidenav .sideHeader {
+  padding: 0 6px;
+  margin-bottom: 12px;
+}
+
+md-sidenav .sideHeader i {
+  cursor: pointer;
+  outline: 0;
+}
+md-sidenav projects-list md-list-item .project-title {
+    margin-left: 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: none;
+}
+md-sidenav projects-list md-list-item .project-title.active,
+md-sidenav projects-list md-list-item .project-title:hover {
+  background-color: #6b6b99 !important;
+}
+md-sidenav projects-list md-list-item { 
+ padding: 0 !important;
+}
+md-sidenav projects-list {
+  padding: 0 16px;
+}
+tasks-list .task-date,
+tasks-list .task-description {
+  width: 100%;
+  border-radius: 5px;
+}
+tasks-list .task-description {
+  height: 60px;
+}
+tasks-list .task-date {
+  margin-bottom: 6px;
+  padding-left: 9px;
+}
+tasks-list .task-description .task-title {
+    border-left: 1px solid #bdbdbd;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+}
+tasks-list {
+  margin-top: -30px;
+}
+tasks-list md-list-item {
+  margin-top: -30px;
+}
+tasks-list md-list-item .group-wrapper{
+  width: 100%;
+}
+tasks-list md-list-item .group-wrapper .task-seperator {
+    border-top: 1px solid #eaeaea;
+}
+tasks-list md-list-item .close-task {
+  position: relative;
+  background: none !important;
+  padding-right: 35px;
+} 
+tasks-list md-list-item .close-task .md-ripple-container{
+  opacity: 0;
+}
+tasks-list md-list-item .close-task:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    border: 3px solid #bdbdbd;
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    cursor: pointer;
+}
+
+#content {
+  overflow: hidden;
+}
+
+#content {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+}
+
+#content .md-button.new-task { 
+  font-size: 36px;
+  line-height: 36px;
+}
+#content .md-button.share {
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  margin: 8px auto 16px 0;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+#content md-icon.avatar {
+  margin-top: 10px;
+}
+
+#content .md-button.share > md-icon {
+  fill: black;
+  width: 36px;
+  height: 36px;
+}
+
+md-button.menuBtn > md-icon {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+#content .md-button.share:active > md-icon {
+  background-color: #dadada;
+  border-radius: 75%;
+  padding: 4px;
+  transition: all 100ms ease-out 30ms;
+}
+
+#content img {
+  display: block;
+  height: auto;
+  max-width: 500px;
+}
+#content .md-sidenav-right {
+    color: #fff !important;
+    width: 40%;
+    max-width: 40%;
+}
+#content .md-sidenav-right-title{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 31px;
+  font-weight: bold;
+}
+
+#content .md-sidenav-right .icons8-delete-2 span{
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#content .md-sidenav-right .icons8-delete-2 {
+    position: absolute;
+    outline: 0;
+    cursor: pointer;
+    top: 25px;
+    left: 15px;
+    font-size: 11px;
+    font-style: normal;
+}
+#content .md-sidenav-right .icons8-delete-2:before {
+  font-size: 23px;
+}
+#content .md-sidenav-right .md-sidenav-right-input {
+  color: #fff;
+  text-align: center;
+  margin: 0px auto 0;
+  width: 100%;
+}
+#content .md-sidenav-right .md-sidenav-right-input.first {
+  margin-top: 25px;
+}
+#content .md-sidenav-right .md-sidenav-right-input label,
+#content .md-sidenav-right .md-sidenav-right-input input {
+  color: #fff;
+}
+#content .md-sidenav-right .md-sidenav-right-input input {
+  border-bottom: 2px solid #bdbdbd;
+}
+/* Utils */
+
+.content-wrapper {
+  position: relative;
+}
+
+/* Typography support coming in 0.8.0 */
+
+md-toolbar h1 {
+  font-size: 1.250em;
+  font-weight: 400;
+}
+
+.user {
+  height: 100px;
+}
+.user img {
+    padding: 2px;
+    border: 1px solid #fff;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+.avatar {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px;
+  vertical-align: middle;
+  zoom: 0.70;
+  transform: translateZ(0);
+  -webkit-transform: scale(0.70);
+  -moz-transform: scale(0.70);
+}
+md-bottom-sheet md-icon {
+  margin-right: 20px;
+}
+
+span.name {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-left: 5px;
+}
+
+.clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}

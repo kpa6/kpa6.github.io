@@ -1,0 +1,45 @@
+<div layout="row">
+  <span flex hide-xs></span>
+  <div flex="80">
+	<md-list>
+	  <md-list-item layout="column">
+	  	<span md-colors={'color':'cstm_pallete-A400'} class="task-date">Today</span>
+	  	<div class="task-description md-whiteframe-8dp" layout="row" layout-align="center center">
+	      	<md-button flex class="close-task"></md-button>
+	      	<div flex="90" class="task-title">task.name</div>
+	  	</div>
+	  </md-list-item>
+	  <md-list-item layout="column">
+	  	<span md-colors={'color':'cstm_pallete-A400'} class="task-date">Tommorow</span>
+	  	<div class="task-description md-whiteframe-8dp" layout="row" layout-align="center center">
+	      	<md-button flex class="close-task"></md-button>
+	      	<div flex="90" class="task-title">task.name</div>
+	  	</div>
+	  </md-list-item>
+	<md-list-item layout="column" class="list-group">
+	  	<span md-colors={'color':'cstm_pallete-A400'} class="task-date">Friday(09.06.2015)</span>
+	  	<div class="md-whiteframe-8dp group-wrapper">
+		  	<div class="task-description" layout="row" layout-align="center center">
+		      	<md-button flex class="close-task"></md-button>
+		      	<div flex="90" class="task-title">task.name</div>
+		  	</div>
+		  	<div class="task-seperator" flex="90" flex-offset="5"></div>
+		  	<div class="task-description" layout="row" layout-align="center center">
+		      	<md-button flex class="close-task"></md-button>
+		      	<div flex="90" class="task-title">task.name</div>
+		  	</div>
+	  	</div>
+	  </md-list-item>
+	  <md-list-item layout="column">
+	  	<span md-colors={'color':'cstm_pallete-A400'} class="task-date">Saturday(10.06.2016)</span>
+	  	<div class="task-description md-whiteframe-8dp" layout="row" layout-align="center center">
+	      	<md-button flex class="close-task"></md-button>
+	      	<div flex="90" class="task-title">task.name</div>
+	  	</div>
+	  </md-list-item>
+	</md-list>
+  </div>
+  <span flex hide-xs></span>
+ <md-button class="md-fab md-fab-bottom-right new-task" md-colors="{background:'cstm_pallete-200', color:'cstm_pallete-A700'}" ng-click="$ctrl.app.toggleNewTask()">
+  <i class="icons8-plus"></i>
+</md-button>

@@ -1,0 +1,13 @@
+<!-- NOTE: @see ngClick for how to pass data selection to outside expression -->
+<div class="sideHeader" layout="row" md-colors="{background:'cstm_pallete-50',color: 'cstm_pallete-900'}">
+	<span>Projects</span>
+	<span flex></span>
+	<i ng-click="$ctrl.app.toggleNewPoject()" class="icons8-plus clearfix"></i>
+</div>
+<md-list>
+  <md-list-item ng-repeat="project in $root.projectsList">
+      <md-button class="project-title">
+      {{project.name}}
+    </md-button>
+  </md-list-item>
+</md-list>
